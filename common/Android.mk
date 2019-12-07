@@ -97,7 +97,7 @@ LOCAL_C_INCLUDES := \
 LOCAL_CFLAGS := -Ofast
 #LOCAL_CFLAGS += -Rpass=loop-vectorize -Rpass-missed=loop-vectorize -Rpass-analysis=loop-vectorize
 LOCAL_CFLAGS += -Wall -Wformat=2 -DNDEBUG -UNDEBUG -Wno-ignored-qualifiers -Werror
-LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-unused-parameter -Wno-implicit-fallthrough
 
 LOCAL_CPPFLAGS := -Ofast -std=c++11 -fexceptions -frtti
 

@@ -1,0 +1,23 @@
+cc_binary {
+    name: "vncpasswd",
+    srcs: [
+        "vncpasswd.cxx",
+    ],
+    static_libs: [
+        "libtigervnc",
+    ],
+    cflags: [
+        "-Ofast",
+        "-Wall",
+        "-Wformat=2",
+        "-DNDEBUG",
+        "-UNDEBUG",
+        "-Wno-unused-parameter",
+    ],
+    cppflags: [
+        "-Ofast",
+        "-fexceptions",
+    ],
+    rtti: true,
+    cpp_std: "c++11",
+}
